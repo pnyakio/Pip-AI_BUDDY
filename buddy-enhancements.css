@@ -1,0 +1,142 @@
+.emoji-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.16em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cloud-mascot {
+  width: 245px;
+  height: 210px;
+  font-size: 0;
+}
+
+.waving-buddy-svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 14px 8px #a78bfa30);
+}
+
+.buddy-arm {
+  transform-box: view-box;
+  transform-origin: 176px 145px;
+  animation: buddy-wave 1.6s ease-in-out infinite;
+}
+
+@keyframes buddy-wave {
+  0%, 100% { transform: rotate(0deg); }
+  35% { transform: rotate(13deg); }
+  70% { transform: rotate(-5deg); }
+}
+
+.history-nav-icon,
+.history-nav-icon svg,
+.section-icon svg,
+.history-empty-icon svg {
+  display: inline-grid;
+  place-items: center;
+}
+
+.history-nav-icon svg,
+.section-icon svg,
+.history-empty-icon svg {
+  width: 1.15em;
+  height: 1.15em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.history-count {
+  margin-left: auto;
+  min-width: 19px;
+  padding: 1px 5px;
+  border-radius: 999px;
+  background: var(--pink-soft);
+  color: #c02676;
+  font-size: 10px;
+  text-align: center;
+}
+
+.history-summary {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.history-list {
+  display: grid;
+  gap: 12px;
+}
+
+.history-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid #eee6ff;
+  border-radius: 18px;
+  background: linear-gradient(110deg, #faf7ff, #fff);
+}
+
+.history-card h3,
+.history-empty h3 {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.history-card p,
+.history-empty p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.history-status {
+  color: var(--purple-dark);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.history-empty {
+  display: grid;
+  justify-items: center;
+  padding: 38px 22px;
+  border: 1px dashed #d9c9ff;
+  border-radius: 18px;
+  background: #fcfaff;
+  text-align: center;
+}
+
+.history-empty-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  background: var(--purple-soft);
+  color: var(--purple-dark);
+  font-size: 22px;
+}
+
+@media (max-width: 760px) {
+  .cloud-mascot {
+    width: 190px;
+    height: 165px;
+  }
+
+  .history-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
